@@ -2,10 +2,10 @@ from flask import Flask, render_template_string, request, jsonify
 import numpy as np
 import random
 import time
+import os
 
 app = Flask(__name__)
 
-# HTML Template with basic JS and Chart.js for frontend rendering
 HTML_TEMPLATE = """
 <!DOCTYPE html>
 <html>
@@ -96,10 +96,10 @@ def index():
 
 @app.route('/scan')
 def scan():
-    # Simulate FFT data and DoA
     fft_data = [random.randint(0, 100) for _ in range(128)]
     doa = random.randint(0, 360)
     return jsonify({"fft": fft_data, "doa": doa})
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=10000)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(debug=False, host="0.0.0.0", port=port)
