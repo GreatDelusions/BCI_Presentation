@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: bci-web-sim
+    env: python
+    buildCommand: "pip install --upgrade pip setuptools wheel && pip install -r requirements.txt"
+    startCommand: "python bci_rf_ultrasonic_web_sim.py"
+    plan: standard
+    envVars:
+      -key: FLASK_ENV
+       value: production
+    
