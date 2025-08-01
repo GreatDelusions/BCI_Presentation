@@ -6,6 +6,8 @@ services:
     startCommand: "python bci_rf_ultrasonic_web_sim.py"
     plan: standard
     envVars:
+      -key: FLASK_ENV
+       value: production
       -key: PYTHON_VERSION
        value: 3.11.6
     
