@@ -1,8 +1,8 @@
 services:
   - type: web
-    name: bci-web-sim
+    name: bci-enhanced-gui
     env: python
-    buildCommand: "pip install --upgrade pip setuptools wheel && pip install -r requirements.txt"
+    buildCommand: "pip install -r requirements.txt"
     startCommand: "python bci_rf_ultrasonic_web_sim.py"
     plan: standard
     envVars:
