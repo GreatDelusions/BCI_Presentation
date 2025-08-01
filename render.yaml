@@ -3,7 +3,7 @@ services:
     name: bci-sim-gui
     env: python
     buildCommand: "pip install --upgrade pip -r requirements.txt"
-    startCommand: "python app.py"
+    startCommand: "python3 app.py"
     plan: free
     envVars:
       - key: FLASK_ENV
