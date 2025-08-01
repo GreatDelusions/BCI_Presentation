@@ -5,5 +5,8 @@ services:
     buildCommand: "pip install --upgrade pip setuptools wheel && pip install -r requirements.txt"
     startCommand: "python bci_rf_ultrasonic_web_sim.py"
     plan: standard
+    envVars:
+      -key: PYTHON_VERSION
+       value: 3.11.6
     
     
