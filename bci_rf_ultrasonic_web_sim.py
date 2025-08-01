@@ -102,4 +102,4 @@ def scan():
     return jsonify({"fft": fft_data, "doa": doa})
 
 if __name__ == '__main__':
-    app.run(debug=True, port=10000)
+    app.run(debug=True, port=0.0.0.0)
