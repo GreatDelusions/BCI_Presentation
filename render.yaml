@@ -2,7 +2,7 @@ services:
   - type: web
     name: bci-web-sim
     env: python
-    plan: free
+    plan: standard
     buildCommand: pip install -r requirements.txt
     startCommand: python app.py
     autoDeploy: true
