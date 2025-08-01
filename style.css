@@ -1,0 +1,62 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#controls {
+    margin-bottom: 20px;
+}
+
+#controls label, #controls select, #controls input {
+    margin: 0 10px;
+}
+
+canvas {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#ledDisplay {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+.led {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ccc;
+    border: 1px solid #888;
+}
+
+.led.active {
+    background: red;
+}
+
+#log {
+    margin-top: 20px;
+    background: #fff;
+    padding: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+#log ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
